@@ -1,0 +1,26 @@
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.location {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.location h2 {
+  margin: 0;
+  font-size: 24px;
+}
+.location p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+.location .best-time {
+  font-weight: bold;
+  color: #2c3e50;
+}

@@ -1,0 +1,92 @@
+/* Base Accordion Styles */
+.accordion {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Light Theme (Default) */
+[data-theme="light"] .accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+[data-theme="light"] .accordion-header {
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+[data-theme="light"] .accordion-header:hover {
+  background-color: #f1f1f1;
+}
+
+[data-theme="light"] .accordion-content {
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Dark Theme */
+[data-theme="dark"] .accordion-item {
+  border-bottom: 1px solid #555;
+}
+
+[data-theme="dark"] .accordion-header {
+  background-color: #333;
+  color: #f9f9f9;
+}
+
+[data-theme="dark"] .accordion-header:hover {
+  background-color: #444;
+}
+
+[data-theme="dark"] .accordion-content {
+  background-color: #222;
+  color: #f1f1f1;
+}
+
+/* Common Styles */
+.accordion-header {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-header::after {
+  content: "+";
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+  content: "-";
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 15px;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: max-height 0.3s ease, padding 0.3s ease, color 0.3s ease;
+}
+
+.accordion-content p {
+  margin: 15px 0;
+}
+
+.accordion-header.active + .accordion-content {
+  max-height: 200px; /* Adjust as needed */
+  padding: 15px;
+}

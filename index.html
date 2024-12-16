@@ -3,15 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theme Toggle</title>
+    <title>Assignment 2</title>
     <link rel="stylesheet" href="styles/body.css" />
+    <link rel="stylesheet" href="styles/modal.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/accordion.css" />
+    <link rel="stylesheet" href="styles/section1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <h1>A Photographer's Portfolio</h1>
       <button id="theme-toggle">Switch Theme</button>
     </header>
-    <div class="container">content</div>
+    <div class="container">
+      <div class="gallery">
+        <img src="assets/1.jpg" alt="" class="galleryPicture" />
+        <img src="assets/2.jpg" alt="" class="galleryPicture" />
+        <img src="assets/3.jpg" alt="" class="galleryPicture" />
+        <img src="assets/4.jpg" alt="" class="galleryPicture" />
+        <img src="assets/5.jpg" alt="" class="galleryPicture" />
+        <img src="assets/6.jpg" alt="" class="galleryPicture" />
+        <img src="assets/7.jpg" alt="" class="galleryPicture" />
+        <img src="assets/8.jpg" alt="" class="galleryPicture" />
+        <img src="assets/9.jpg" alt="" class="galleryPicture" />
+        <img src="assets/10.jpg" alt="" class="galleryPicture" />
+      </div>
+      <div class="controls">
+        <button id="showMore">Show More</button>
+        <button id="showLess">Show Less</button>
+      </div>
+
+      <dialog>
+        <button>&#10006;</button>
+        <br />
+        <img src="assets/10.jpg" alt="" width="600px" class="pictureModal" />
+      </dialog>
+      <div class="section1">
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">What’s your pricing?</button>
+            <div class="accordion-content">
+              <p>
+                Pricing depends on the type of shoot, location, and duration. I
+                offer packages that can be customized based on your needs. Let
+                me know the details, and I can give you a quote.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              How long will it take to receive the photos?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Typically, I deliver the final photos within 2-4 weeks,
+                depending on the complexity and the number of photos. I’ll keep
+                you updated throughout the process.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Do you provide retouching or editing?
+            </button>
+            <div class="accordion-content">
+              <p>
+                Yes, all my photos are professionally edited. Basic retouching
+                is included in the package, and more extensive edits can be
+                requested for an additional fee.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="locations-container"></div>
+      </div>
+    </div>
+
+    <script src="scripts/body.js"></script>
+    <script src="scripts/modals.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/locations.js"></script>
   </body>
-  <script src="scripts/body.js"></script>
 </html>
