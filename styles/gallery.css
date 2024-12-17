@@ -6,12 +6,12 @@
   gap: 10px;
 }
 .galleryPicture {
-  width: 300px; /* Fixed width */
-  height: 300px; /* Fixed height */
-  object-fit: cover; /* Ensures the images fill the space while maintaining aspect ratio */
-  border-radius: 8px; /* Optional: Adds rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
-  transition: transform 0.3s ease; /* Optional: Smooth hover effect */
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
 .controls {
@@ -21,30 +21,26 @@
   margin-top: 20px;
 }
 
-/* Style for the buttons */
 .controls button {
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
   color: #ffffff;
-  background-color: #0078d7; /* A clean blue color */
+  background-color: #0078d7;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
-/* Hover effect */
 .controls button:hover {
-  background-color: #005bb5; /* Slightly darker blue on hover */
-  transform: translateY(-2px); /* Lift effect */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  background-color: #005bb5;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Active/pressed effect */
 .controls button:active {
-  background-color: #003f85; /* Even darker blue when pressed */
-  transform: translateY(0); /* Reset lift */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Original shadow */
+  background-color: #003f85;
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

@@ -2,10 +2,8 @@ const accordionHeaders = document.querySelectorAll(".accordion-header");
 
 accordionHeaders.forEach((header) => {
   header.addEventListener("click", () => {
-    // Toggle active class on the clicked header
     header.classList.toggle("active");
 
-    // Close other accordion items
     document.querySelectorAll(".accordion-header").forEach((otherHeader) => {
       if (otherHeader !== header) {
         otherHeader.classList.remove("active");
@@ -14,7 +12,6 @@ accordionHeaders.forEach((header) => {
       }
     });
 
-    // Toggle the content visibility
     const content = header.nextElementSibling;
     if (header.classList.contains("active")) {
       content.style.maxHeight = content.scrollHeight + "px";
