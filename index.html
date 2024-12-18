@@ -180,6 +180,7 @@
             required
             placeholder="Your full name"
           />
+          <span id="nameError" class="error-message"></span>
 
           <label for="email">Email</label>
           <input
@@ -219,11 +220,14 @@
           <div id="passwordStrength"></div>
 
           <button type="submit">Book Now</button>
-          <div
+          <!-- <div
             id="successMessage"
             style="display: none; color: green; margin-top: 10px"
           >
-            Your booking has been successfully submitted!
+            Your account for booking was successfully created!
+          </div> -->
+          <div id="toast">
+            Your account for booking was successfully created!
           </div>
         </form>
       </div>
