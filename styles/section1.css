@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  gap: 60px;
   flex-wrap: wrap;
 }
 
 .location {
   border: 1px solid #ddd;
+  max-width: 400px;
   padding: 20px;
   margin: 10px;
   border-radius: 8px;

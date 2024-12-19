@@ -26,9 +26,15 @@ function displayLocations(locations) {
     const description = document.createElement("p");
     description.textContent = location.description;
 
+    const site = document.createElement("a");
+    site.textContent = "View more";
+    site.href = location.site;
+    site.target = "_blank";
+
     locationDiv.appendChild(locationTitle);
     locationDiv.appendChild(bestTime);
     locationDiv.appendChild(description);
+    locationDiv.appendChild(site);
 
     container.appendChild(locationDiv);
   });

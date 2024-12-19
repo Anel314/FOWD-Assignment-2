@@ -2,16 +2,19 @@
   {
     "location": "Grand Canyon",
     "best_time": "Sunrise and Sunset",
-    "description": "The Grand Canyon offers stunning views, especially at dawn and dusk. Perfect for landscape photography."
+    "description": "The Grand Canyon offers stunning views, especially at dawn and dusk. Perfect for landscape photography.",
+    "site": "pages/grand-canyion.html"
   },
   {
     "location": "Eiffel Tower, Paris",
     "best_time": "Early Morning",
-    "description": "Capture the Eiffel Tower with minimal crowds during the early morning hours. Ideal for architectural shots."
+    "description": "Capture the Eiffel Tower with minimal crowds during the early morning hours. Ideal for architectural shots.",
+    "site": "pages/eiffel-tower.html"
   },
   {
     "location": "Mount Fuji, Japan",
     "best_time": "Spring and Fall",
-    "description": "Mt. Fuji is beautiful year-round, but the best views are in spring (cherry blossoms) and fall (autumn foliage)."
+    "description": "Mt. Fuji is beautiful year-round, but the best views are in spring (cherry blossoms) and fall (autumn foliage).",
+    "site": "pages/japan.html"
   }
 ]

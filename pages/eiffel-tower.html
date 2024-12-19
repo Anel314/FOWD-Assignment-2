@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Canyon Images</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow-x: hidden;
+        background: black;
+      }
+
+      .image-container {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+      }
+
+      .gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(
+          rgba(0, 0, 0, 0.6) 0%,
+          rgba(0, 0, 0, 0) 30%,
+          rgba(0, 0, 0, 0) 70%,
+          rgba(0, 0, 0, 0.6) 100%
+        );
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="image-container">
+      <img src="../assets/fr1.jpg" alt="Grand Canyon 1" />
+      <div class="gradient"></div>
+    </div>
+    <div class="image-container">
+      <img src="../assets/fr2.jpg" alt="Grand Canyon 2" />
+      <div class="gradient"></div>
+    </div>
+    <div class="image-container">
+      <img src="../assets/fr3.jpg" alt="Grand Canyon 3" />
+      <div class="gradient"></div>
+    </div>
+    <div class="image-container">
+      <img src="../assets/fr4.jpg" alt="Grand Canyon 4" />
+      <div class="gradient"></div>
+    </div>
+  </body>
+</html>
