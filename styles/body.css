@@ -21,10 +21,10 @@ html[data-theme="dark"] {
 body {
   background-color: var(--background-color);
   color: var(--text-color);
-  font-family: Arial, sans-serif;
+  font-family: Arial, serif;
   margin: 0;
   padding: 0;
-  font-family: "Bad Script", cursive;
+  /* font-family: "Bad Script", cursive; */
 }
 
 header {

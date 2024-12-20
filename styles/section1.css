@@ -8,6 +8,7 @@
 
 .location {
   border: 1px solid #ddd;
+  width: 100%;
   max-width: 400px;
   padding: 20px;
   margin: 10px;
