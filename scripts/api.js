@@ -1,4 +1,7 @@
-const apiKey = "apikey";
+// API KEY HAS TO GO HEREEEEEEE
+//WOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO
+//If it doesn't work it's your key probably because 'It wOrkS oN My MaChINe'
+const apiKey = "HERE GOES YOUR API KEYYYYYY";
 
 function getWeather() {
   const location = document.getElementById("locationSearch").value;

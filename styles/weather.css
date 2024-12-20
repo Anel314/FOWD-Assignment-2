@@ -7,6 +7,7 @@
   background: var(--weather-bg-color, #ffffff);
   color: var(--weather-text-color, #000000);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
 }
 
 [data-theme="dark"] .weather-container {
