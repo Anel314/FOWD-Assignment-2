@@ -1,0 +1,64 @@
+.weather-container {
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  background: var(--weather-bg-color, #ffffff);
+  color: var(--weather-text-color, #000000);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+
+[data-theme="dark"] .weather-container {
+  --weather-bg-color: #2c2c2c;
+  --weather-text-color: #ffffff;
+  --weather-input-bg: #1f1f1f;
+  --weather-input-text: #ffffff;
+  --weather-button-bg: #1e90ff;
+  --weather-button-text: #ffffff;
+  border: 1px solid #444;
+}
+
+[data-theme="light"] .weather-container {
+  --weather-bg-color: #ffffff;
+  --weather-text-color: #000000;
+  --weather-input-bg: #f0f0f0;
+  --weather-input-text: #000000;
+  --weather-button-bg: #007bff;
+  --weather-button-text: #ffffff;
+  border: 1px solid #ddd;
+}
+
+.weather-container input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: var(--weather-input-bg, #f0f0f0);
+  color: var(--weather-input-text, #000000);
+  outline: none;
+}
+
+.weather-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--weather-button-bg, #007bff);
+  color: var(--weather-button-text, #ffffff);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.weather-container button:hover {
+  opacity: 0.9;
+}
+
+.weather-info {
+  margin-top: 15px;
+}
+
+.weather-info p {
+  margin: 5px 0;
+}
