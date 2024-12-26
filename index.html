@@ -18,15 +18,20 @@
   </head>
   <body>
     <header>
-      <h1>A Photographer's Portfolio</h1>
+      <h1><a href="#home">A Photographer's Portfolio</a></h1>
+      <div class="nav-items">
+        <ul>
+          <li><a href="#questions">FAQ</a></li>
+        </ul>
+      </div>
       <button id="theme-toggle">Switch Theme</button>
     </header>
     <div class="container">
       <main id="spapp" role="main">
-        <section id="view_2"></section>
-        <section id="view_3"><h1>view 3</h1></section>
-        <section id="error_404"><h1>Page not found</h1></section>
-        <section id="view_1" data-load="home.html"></section>
+        <section id="questions" data-load="questions.html"></section>
+        <section id="view_3"></section>
+        <section id="error_404"></section>
+        <section id="home" data-load="home.html"></section>
       </main>
     </div>
 

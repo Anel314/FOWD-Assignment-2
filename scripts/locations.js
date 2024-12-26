@@ -40,6 +40,4 @@ function displayLocations(locations) {
   });
 }
 
-window.onload = function () {
-  loadLocations();
-};
+loadLocations();
