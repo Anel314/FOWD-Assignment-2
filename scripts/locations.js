@@ -1,6 +1,6 @@
 function loadLocations() {
   const xhr = new XMLHttpRequest();
-  xhr.open("GET", "../assets/locations.json", true);
+  xhr.open("GET", "./assets/data/locations.json", true);
   xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
       const locations = JSON.parse(xhr.responseText);
