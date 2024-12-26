@@ -7,13 +7,41 @@ $(document).ready(function () {
   app.route({
     view: "home",
     onCreate: console.log("Created"),
-    onReady: console.log("Ready"),
+    onReady: function () {
+      window.scrollTo(0, 0);
+    },
   });
 
   app.route({
     view: "questions",
     onCreate: console.log("Created"),
-    onReady: console.log("Ready"),
+    onReady: function () {
+      window.scrollTo(0, 0);
+    },
+  });
+
+  app.route({
+    view: "booking",
+    onCreate: console.log("Created"),
+    onReady: function () {
+      window.scrollTo(0, 0);
+    },
+  });
+
+  app.route({
+    view: "portfolio",
+    onCreate: console.log("Created"),
+    onReady: function () {
+      window.scrollTo(0, 0);
+    },
+  });
+
+  app.route({
+    view: "comments",
+    onCreate: console.log("Created"),
+    onReady: function () {
+      window.scrollTo(0, 0);
+    },
   });
 
   // run app

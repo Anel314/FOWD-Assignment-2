@@ -1,0 +1,79 @@
+<h1 align="center">Booking</h1>
+<div class="section2">
+  <div class="form-container">
+    <h1>Book a Photoshoot</h1>
+    <h3>Create an account:</h3>
+    <form id="bookingForm" novalidate>
+      <label for="name">Full Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        required
+        placeholder="Your full name"
+      />
+      <span id="nameError" class="error-message"></span>
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        required
+        placeholder="Your email address"
+      />
+      <span id="emailError" class="error-message"></span>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required />
+
+      <label for="location">Location</label>
+      <select id="location" name="location" required>
+        <option value="" disabled selected>Select a location</option>
+        <option value="grand-canyon">Grand Canyon</option>
+        <option value="eiffel-tower">Eiffel Tower, Paris</option>
+        <option value="mount-fuji">Mount Fuji, Japan</option>
+        <option value="beach">Beach</option>
+        <option value="park">Park</option>
+        <option value="cityscape">Cityscape</option>
+        <option value="studio">Photography Studio</option>
+        <option value="mountains">Mountains</option>
+        <option value="garden">Botanical Garden</option>
+      </select>
+
+      <label for="password">Create Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+        placeholder="Create a strong password"
+      />
+      <div id="passwordStrength"></div>
+
+      <button type="submit">Book Now</button>
+      <!-- <div
+            id="successMessage"
+            style="display: none; color: green; margin-top: 10px"
+          >
+            Your account for booking was successfully created!
+          </div> -->
+      <div id="toast">Your account for booking was successfully created!</div>
+    </form>
+  </div>
+  <!--SPOT FOR WEATHER API INTEGRATION-->
+  <div class="weather-container">
+    <h1>Look up the weather for your desired location</h1>
+    <h4>Make sure the weather doesn't wash off your beauty</h4>
+    <p>(Use city names like Sarajevo, Tokyio, etc.)</p>
+    <input type="text" id="locationSearch" placeholder="Enter location..." />
+    <button onclick="getWeather()">Get Weather</button>
+    <div class="weather-info" id="weatherInfo"></div>
+  </div>
+</div>
+</div>
+<p class="success-message" id="success-message"></p>
+
+
+    <script src="../scripts/formValidation.js"></script>
+    <script src="../scripts/api.js"></script>

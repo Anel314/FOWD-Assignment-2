@@ -3,7 +3,7 @@ const pictures2 = Array.from(document.querySelectorAll(".galleryPicture"));
 const showMoreBtn = document.getElementById("showMore");
 const showLessBtn = document.getElementById("showLess");
 
-let visibleImages = 4;
+let visibleImages = 8;
 function updateGallery() {
   pictures2.forEach((picture, index) => {
     if (index < visibleImages) {

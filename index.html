@@ -7,33 +7,43 @@
     <link rel="stylesheet" href="styles/body.css" />
     <link rel="stylesheet" href="styles/modal.css" />
     <link rel="stylesheet" href="styles/gallery.css" />
-    <link rel="stylesheet" href="styles/accordion.css" />
     <link rel="stylesheet" href="styles/section1.css" />
     <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/weather.css" />
     <link rel="stylesheet" href="styles/section2.css" />
     <link rel="stylesheet" href="styles/comments.css" />
 
+    <style>
+      .underline {
+        text-decoration: underline;
+      }
+    </style>
     <link rel="stylesheet" href="assets/css/spapp.css" />
   </head>
   <body>
-    <header>
-      <h1><a href="#home">A Photographer's Portfolio</a></h1>
+    <header style="position: sticky; top: 0">
       <div class="nav-items">
-        <ul>
-          <li><a href="#questions">FAQ</a></li>
-        </ul>
+        <h1>
+          <a id="hbtn" href="#home">Homepage</a>
+        </h1>
+        <a id="qbtn" href="#questions">FAQ</a>
+        <a id="bbtn" href="#booking">Book a photoshoot</a>
+        <a id="cbtn" href="#comments">Comments</a>
+        <a id="pbtn" href="#portfolio">My Work</a>
+        <button id="theme-toggle">Switch Theme</button>
       </div>
-      <button id="theme-toggle">Switch Theme</button>
     </header>
+
     <div class="container">
       <main id="spapp" role="main">
         <section id="questions" data-load="questions.html"></section>
-        <section id="view_3"></section>
-        <section id="error_404"></section>
+        <section id="booking" data-load="./auth/booking.html"></section>
+        <section id="comments" data-load="comments.html"></section>
         <section id="home" data-load="home.html"></section>
+        <section id="portfolio" data-load="portfolio.html"></section>
       </main>
     </div>
+    <footer style="margin-top: 10px">THIS IS MY FOOTER</footer>
 
     <script
       src="https://code.jquery.com/jquery-3.1.0.min.js"
@@ -43,5 +53,8 @@
 
     <script src="assets/js/jquery.spapp.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script src="../scripts/body.js"></script>
+    <script src="../scripts/nav.js"></script>
   </body>
 </html>
