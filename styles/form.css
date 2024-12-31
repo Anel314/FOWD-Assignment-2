@@ -1,167 +1,71 @@
-.form-container,
-.form-container * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.form-container {
-  font-family: Arial, sans-serif;
-  max-width: 400px;
-  width: 100%;
-  margin: 50px;
+#loginForm {
   padding: 20px;
-  border-radius: 8px;
-  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-}
-
-[data-theme="light"] .form-container {
-  background-color: #ffffff;
-  color: #333;
-  border: 1px solid #ddd;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-[data-theme="light"] .form-container input,
-[data-theme="light"] .form-container select {
-  background-color: #fff;
-  color: #333;
-  border: 1px solid #ccc;
-}
-
-[data-theme="light"] .form-container button {
-  background-color: #007bff;
-  color: white;
-}
-
-[data-theme="light"] .form-container button:hover {
-  background-color: #0056b3;
-}
-
-[data-theme="dark"] .form-container {
-  background-color: #2c2c2c;
-  color: #f5f5f5;
-  border: 1px solid #444;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  background: var(--form-background, #ffffff);
+  color: var(--form-text-color, #000000);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
 }
 
-[data-theme="dark"] .form-container input,
-[data-theme="dark"] .form-container select {
-  background-color: #444;
-  color: #f5f5f5;
-  border: 1px solid #666;
+[data-theme="dark"] #loginForm {
+  --form-background: #2c2c2c;
+  --form-text-color: #ffffff;
+  --form-input-bg: #1f1f1f;
+  --form-input-text: #ffffff;
+  --form-button-bg: #1e90ff;
+  --form-button-text: #ffffff;
+  border: 1px solid #444;
 }
 
-[data-theme="dark"] .form-container input::placeholder {
-  color: #aaa;
+[data-theme="light"] #loginForm {
+  --form-background: #ffffff;
+  --form-text-color: #000000;
+  --form-input-bg: #f0f0f0;
+  --form-input-text: #000000;
+  --form-button-bg: #007bff;
+  --form-button-text: #ffffff;
+  border: 1px solid #ddd;
 }
 
-[data-theme="dark"] .form-container button {
-  background-color: #007bff;
-  color: white;
+#loginForm .form-group {
+  margin-bottom: 15px;
 }
 
-[data-theme="dark"] .form-container button:hover {
-  background-color: #0056b3;
-}
-
-.form-container h1 {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.form-container label {
+#loginForm label {
   display: block;
-  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: inherit;
+}
+
+#loginForm input {
+  width: 95%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background: var(--form-input-bg, #f0f0f0);
+  color: var(--form-input-text, #000000);
+  outline: none;
+}
+
+#loginForm button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: var(--form-button-bg, #007bff);
+  color: var(--form-button-text, #ffffff);
+  cursor: pointer;
   font-weight: bold;
 }
 
-.form-container input,
-.form-container select {
-  width: 100%;
-  padding: 10px;
-  margin-top: 5px;
-  border-radius: 4px;
+#loginForm button:hover {
+  opacity: 0.9;
 }
 
-.form-container input::placeholder {
-  color: #999;
-  opacity: 0.6;
-}
-.form-container button {
-  display: block;
-  width: 100%;
-  margin-top: 20px;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-#toast {
-  visibility: hidden;
-  min-width: 250px;
-  margin-left: -125px;
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  border-radius: 2px;
-  padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 50%;
-  bottom: 30px;
-  font-size: 17px;
-}
-
-#toast.show {
-  visibility: visible;
-  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-  animation: fadein 0.5s, fadeout 0.5s 2.5s;
-}
-
-@-webkit-keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    bottom: 0;
-    opacity: 0;
-  }
-  to {
-    bottom: 30px;
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
-}
-
-@keyframes fadeout {
-  from {
-    bottom: 30px;
-    opacity: 1;
-  }
-  to {
-    bottom: 0;
-    opacity: 0;
-  }
+#loginForm .error {
+  color: red;
+  font-size: 14px;
 }

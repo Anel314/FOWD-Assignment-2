@@ -44,6 +44,42 @@ $(document).ready(function () {
     onReady: function () {
       window.scrollTo(0, 0);
       updateActiveLink("home");
+
+      const formData = JSON.parse(localStorage.getItem("bookingFormData"));
+
+      const profileDetails = document.getElementById("profileDetails");
+
+      const userData = JSON.parse(localStorage.getItem("bookingFormData"));
+      console.log(userData);
+      const noImage =
+        "https://img.freepik.com/premium-vector/no-photo-available-vector-icon-default-image-symbol-picture-coming-soon-web-site-mobile-app_87543-18055.jpg";
+      if (!userData) {
+        window.location.hash = "#booking";
+        alert("You need to log in to see this view!");
+      } else {
+        console.log(formData);
+        profileDetails.innerHTML = `
+        <div style="text-align:center;">
+        <img src="${
+          userData.image == "" ? noImage : userData.image
+        }"  width="200px" style="border-radius:200px" alt="Profile Image" class="profile-image">
+        </div>
+
+   <div class="profile-item">
+  <strong>Name:</strong> <span>${userData.name}</span>
+</div>
+<div class="profile-item">
+  <strong>Email:</strong> <span>${userData.email}</span>
+</div>
+<div class="profile-item">
+  <strong>Preferred Date:</strong> <span>${userData.preferred_date}</span>
+</div>
+<div class="profile-item">
+  <strong>Location:</strong> <span>${userData.location}</span>
+</div>
+
+    `;
+      }
     },
   });
 

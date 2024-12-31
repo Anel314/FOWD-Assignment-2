@@ -1,65 +1,95 @@
-.homepage {
+.profile-item {
   display: flex;
+  margin: 15px 0;
+  font-family: "Arial", sans-serif;
   align-items: center;
-  justify-content: center;
-  min-height: 80vh;
-  padding: 20px;
-  text-align: center;
-  transition: background-color 0.3s, color 0.3s;
+  font-size: 16px;
 }
 
-.homepage .hero {
-  max-width: 800px;
-}
-.homepage h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-  font-weight: bold;
+.profile-item strong {
+  color: #444;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
-.homepage p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-  line-height: 1.5;
+.profile-item span {
+  color: #555;
+  font-weight: 400;
+  word-break: break-word;
 }
 
-.homepage .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
-  background-color: #007bff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s;
-}
-
-.homepage .cta-button:hover {
-  background-color: #0056b3;
-}
-
-[data-theme="light"] .homepage {
-  background-color: #f9f9f9;
+[data-theme="light"] {
+  background-color: #f5f5f5;
   color: #333;
 }
 
-[data-theme="light"] .homepage .cta-button {
-  background-color: #007bff;
+[data-theme="light"] .profile-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-[data-theme="light"] .homepage .cta-button:hover {
-  background-color: #0056b3;
+[data-theme="light"] .profile-item strong {
+  color: #333;
 }
 
-[data-theme="dark"] .homepage {
-  background-color: #1e1e1e;
-  color: #ddd;
+[data-theme="light"] .profile-item span {
+  color: #555;
 }
 
-[data-theme="dark"] .homepage .cta-button {
-  background-color: #ff9800;
+[data-theme="dark"] {
+  background-color: #333;
+  color: #f5f5f5;
 }
 
-[data-theme="dark"] .homepage .cta-button:hover {
-  background-color: #cc7700;
+[data-theme="dark"] .profile-item {
+  background-color: #444;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .profile-item strong {
+  color: #f5f5f5;
+}
+
+[data-theme="dark"] .profile-item span {
+  color: #bbb;
+}
+
+.profile-item:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+  .profile-item {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+  }
+
+  .profile-item strong {
+    margin-bottom: 5px;
+  }
+}
+
+.clear-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #e60000;
+}
+
+.clear-button:active {
+  background-color: #b30000;
 }

@@ -1,66 +1,30 @@
 <h1 align="center">Booking</h1>
 <div class="section2">
-  <div class="form-container">
-    <h1>Book a Photoshoot</h1>
-    <h3>Create an account:</h3>
-    <form id="bookingForm" novalidate>
-      <label for="name">Full Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        required
-        placeholder="Your full name"
-      />
-      <span id="nameError" class="error-message"></span>
-
+  <form id="loginForm">
+    <h3>Login to see your booking:</h2>
+    <div class="form-group">
       <label for="email">Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        required
-        placeholder="Your email address"
-      />
-      <span id="emailError" class="error-message"></span>
+      <input type="email" id="email" name="email" required />
+      <div class="error" id="emailError"></div>
+    </div>
 
-      <label for="date">Preferred Date</label>
-      <input type="date" id="date" name="date" required />
-
-      <label for="location">Location</label>
-      <select id="location" name="location" required>
-        <option value="" disabled selected>Select a location</option>
-        <option value="grand-canyon">Grand Canyon</option>
-        <option value="eiffel-tower">Eiffel Tower, Paris</option>
-        <option value="mount-fuji">Mount Fuji, Japan</option>
-        <option value="beach">Beach</option>
-        <option value="park">Park</option>
-        <option value="cityscape">Cityscape</option>
-        <option value="studio">Photography Studio</option>
-        <option value="mountains">Mountains</option>
-        <option value="garden">Botanical Garden</option>
-      </select>
-
-      <label for="password">Create Password</label>
+    <div class="form-group">
+      <label for="password">Password</label>
       <input
         type="password"
         id="password"
         name="password"
         required
-        placeholder="Create a strong password"
+        minlength="6"
       />
-      <div id="passwordStrength"></div>
+      <div class="error" id="passwordError"></div>
+    </div>
 
-      <button type="submit">Book Now</button>
-      <!-- <div
-            id="successMessage"
-            style="display: none; color: green; margin-top: 10px"
-          >
-            Your account for booking was successfully created!
-          </div> -->
-      <div id="toast">Your account for booking was successfully created!</div>
-    </form>
-  </div>
+    <div style="text-align: center">
+      <button type="submit">Login</button>
+    </div>
+  </form>
+
   <!--SPOT FOR WEATHER API INTEGRATION-->
   <div class="weather-container">
     <h1>Look up the weather for your desired location</h1>
@@ -71,9 +35,7 @@
     <div class="weather-info" id="weatherInfo"></div>
   </div>
 </div>
-</div>
 <p class="success-message" id="success-message"></p>
 
-
-    <script src="../scripts/formValidation.js"></script>
-    <script src="../scripts/api.js"></script>
+<script src="../scripts/formValidation.js"></script>
+<script src="../scripts/api.js"></script>

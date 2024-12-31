@@ -1,10 +1,12 @@
-<section id="home" class="homepage">
-  <div class="hero">
-    <h1>Welcome to My Photography Portfolio</h1>
-    <p>
-      Capturing moments, creating memories. Explore my work and book a
-      photoshoot today!
-    </p>
-    <a href="#portfolio" class="cta-button">View My Work</a>
-  </div>
-</section>
+<div class="user-profile" id="userProfile">
+  <h2>User Profile</h2>
+  <div class="profile-details" id="profileDetails"></div>
+</div>
+<button class="clear-button" onclick="clearLocalStorage()">Log Out</button>
+
+<script>
+  function clearLocalStorage() {
+    localStorage.clear();
+    window.location.hash = "#booking";
+  }
+</script>
