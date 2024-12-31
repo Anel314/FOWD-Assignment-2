@@ -1,0 +1,84 @@
+{
+  "users": [
+    {
+      "name": "Alice Johnson",
+      "password": "password123",
+      "email": "alice.johnson@example.com",
+      "preferred_date": "2024-01-15",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Woman_at_Lover%27s_Bridge_Tanjung_Sepat_%28cropped%29.jpg/800px-Woman_at_Lover%27s_Bridge_Tanjung_Sepat_%28cropped%29.jpg",
+      "location": "New York, USA"
+    },
+    {
+      "name": "Bob Smith",
+      "password": "securepass456",
+      "email": "bob.smith@example.com",
+      "preferred_date": "2024-02-10",
+      "image": "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg",
+      "location": "London, UK"
+    },
+    {
+      "name": "Charlie Brown",
+      "password": "charlie789",
+      "email": "charlie.brown@example.com",
+      "preferred_date": "2024-03-05",
+      "image": "https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "location": "Sydney, Australia"
+    },
+    {
+      "name": "Diana Prince",
+      "password": "wonderwoman2024",
+      "email": "diana.prince@example.com",
+      "preferred_date": "2024-01-20",
+      "image": "https://sabimages.com/wp-content/uploads/2024/07/cute-girl-pic-dp1.jpg",
+      "location": "Paris, France"
+    },
+    {
+      "name": "Ethan Hunt",
+      "password": "mi6agent007",
+      "email": "ethan.hunt@example.com",
+      "preferred_date": "2024-02-14",
+      "image": "",
+      "location": "Berlin, Germany"
+    },
+    {
+      "name": "Fiona Gallagher",
+      "password": "fiona2024",
+      "email": "fiona.gallagher@example.com",
+      "preferred_date": "2024-03-10",
+      "image": "",
+      "location": "Chicago, USA"
+    },
+    {
+      "name": "George Lucas",
+      "password": "starwarsfan",
+      "email": "george.lucas@example.com",
+      "preferred_date": "2024-01-25",
+      "image": "",
+      "location": "San Francisco, USA"
+    },
+    {
+      "name": "Hannah Montana",
+      "password": "doublelife123",
+      "email": "hannah.montana@example.com",
+      "preferred_date": "2024-02-28",
+      "image": "",
+      "location": "Nashville, USA"
+    },
+    {
+      "name": "Ian Fleming",
+      "password": "bond007",
+      "email": "ian.fleming@example.com",
+      "preferred_date": "2024-03-15",
+      "image": "",
+      "location": "Edinburgh, UK"
+    },
+    {
+      "name": "Jasmine Aladdin",
+      "password": "magiccarpet",
+      "email": "jasmine.aladdin@example.com",
+      "preferred_date": "2024-01-30",
+      "image": "",
+      "location": "Cairo, Egypt"
+    }
+  ]
+}

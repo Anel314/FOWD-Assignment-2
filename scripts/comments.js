@@ -1,4 +1,8 @@
-let comments = [];
+let comments = [
+  { name: "Amela", text: "This is a comment" },
+  { name: "Ajla", text: "This is great!" },
+  { name: "Anel", text: "Could have used better styling" },
+];
 let commentToEdit = null;
 let commentToDelete = null;
 
@@ -19,6 +23,7 @@ function displayComments() {
                 </div>
             `;
     commentList.appendChild(commentDiv);
+    console.log(comment);
   });
 }
 
@@ -76,3 +81,4 @@ function closeDialog() {
     .querySelectorAll(".dialog")
     .forEach((dialog) => (dialog.style.display = "none"));
 }
+displayComments();
