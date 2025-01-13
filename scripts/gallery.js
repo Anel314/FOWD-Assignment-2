@@ -3,7 +3,7 @@ const pictures2 = Array.from(document.querySelectorAll(".galleryPicture"));
 const showMoreBtn = document.getElementById("showMore");
 const showLessBtn = document.getElementById("showLess");
 
-let visibleImages = 4;
+let visibleImages = 3;
 function updateGallery() {
   pictures2.forEach((picture, index) => {
     if (index < visibleImages) {
@@ -16,7 +16,9 @@ function updateGallery() {
 
 showMoreBtn.addEventListener("click", () => {
   if (visibleImages < pictures2.length) {
-    visibleImages += 1;
+    if (visibleImages < 8) {
+      visibleImages += 1;
+    }
     updateGallery();
   }
 });

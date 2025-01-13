@@ -1,0 +1,12 @@
+<div class="user-profile" id="userProfile">
+  <h2>User Profile</h2>
+  <div class="profile-details" id="profileDetails"></div>
+</div>
+<button class="clear-button" onclick="clearLocalStorage()">Log Out</button>
+
+<script>
+  function clearLocalStorage() {
+    localStorage.clear();
+    window.location.hash = "#booking";
+  }
+</script>
